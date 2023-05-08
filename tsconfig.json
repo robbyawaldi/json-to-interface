@@ -13,8 +13,15 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "types",
     "types": [
       "bun-types" // add Bun global
-    ]
-  }
+    ],
+  },
+  "exclude": [
+    "rollup.config.js"
+  ]
 }

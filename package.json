@@ -1,8 +1,17 @@
 {
-  "name": "jsontointerface",
-  "module": "index.ts",
+  "name": "@robbyawaldi/jsontointerface",
+  "version": "0.0.0",
+  "module": "dist/esm/index.js",
   "type": "module",
+  "scripts": {
+    "rollup": "rollup -c"
+  },
   "devDependencies": {
-    "bun-types": "^0.5.0"
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "bun-types": "^0.5.0",
+    "rollup": "^3.21.5",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.34.1"
   }
 }

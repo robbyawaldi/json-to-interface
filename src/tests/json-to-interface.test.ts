@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test";
-import { jsonToInterface } from "../jsonToInterface.js";
+import { jsonToInterface } from "../json-to-interface.js";
 
 describe("jsonToInterface", () => {
   test("should return an interface string for a simple JSON object", () => {
