@@ -1,10 +1,13 @@
 {
-  "name": "@robbyawaldi/jsontointerface",
-  "version": "0.0.0",
+  "name": "@robbyawaldi/json-to-interface",
+  "version": "0.0.1",
   "module": "dist/esm/index.js",
   "type": "module",
   "scripts": {
     "rollup": "rollup -c"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",
