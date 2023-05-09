@@ -1,8 +1,11 @@
 {
   "name": "@robbyawaldi/json-to-interface",
-  "version": "0.0.4",
-  "module": "dist/esm/index.js",
-  "type": "module",
+  "version": "0.0.9",
+  "main": "dist/cjs/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "rollup": "rollup -c"
   },
