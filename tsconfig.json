@@ -20,6 +20,7 @@
     ],
   },
   "exclude": [
-    "rollup.config.js"
+    "rollup.config.js",
+    "dist"
   ]
 }

@@ -1,13 +1,17 @@
 {
   "name": "@robbyawaldi/json-to-interface",
-  "version": "0.0.9",
+  "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
+  "bin": {
+    "json2interface": "dist/cli/index.cjs"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "cli": "json2interface --help"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -15,10 +19,18 @@
   "repository": "https://github.com/robbyawaldi/json-to-interface",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
+    "@types/prettier": "^2.7.2",
     "bun-types": "^0.5.0",
+    "commander": "^10.0.1",
+    "prettier": "^2.8.8",
     "rollup": "^3.21.5",
     "rollup-plugin-dts": "^5.3.0",
-    "rollup-plugin-typescript2": "^0.34.1"
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "@robbyawaldi/json-to-interface": "^1.0.1"
   }
 }
