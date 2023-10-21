@@ -1,8 +1,9 @@
 {
   "name": "@robbyawaldi/json-to-interface",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "bin": {
     "json2interface": "dist/cli/index.cjs"
   },
@@ -14,7 +15,7 @@
     "cli": "json2interface --help"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   },
   "repository": "https://github.com/robbyawaldi/json-to-interface",
   "devDependencies": {
@@ -31,6 +32,6 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@robbyawaldi/json-to-interface": "^1.0.1"
+    "typescript": "^5.2.2"
   }
 }
