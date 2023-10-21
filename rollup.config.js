@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import json from "@rollup/plugin-json";
 import dts from "rollup-plugin-dts";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 export default [
   {
@@ -27,6 +28,7 @@ export default [
       }),
       resolve(),
       commonjs(),
+      peerDepsExternal(),
     ],
   },
   {
